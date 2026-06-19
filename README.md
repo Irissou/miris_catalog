@@ -26,4 +26,4 @@ NIRCam parent catalog used in the estimate of the purity and the completeness of
 NC_detection = Table(hdul['NIRCAM'].data)
 
 
-The catalog is avaiable at the following link on Zenodo: 10.5281/zenodo.20747053. 
+The catalog is avaiable at the following link on Zenodo: https://doi.org/10.5281/zenodo.20747053. 
