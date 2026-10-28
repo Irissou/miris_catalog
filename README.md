@@ -10,14 +10,18 @@ from astropy.io import fits
 from astropy.table import Table
 
 hdul = fits.open('MIRIS_catalog.fits')
+
 print(hdul.info())
 
 Science catalog with the photometry and associated errors in 3 MIRI, 14 NIRCam, and 9 HST filters. The full procedure of the catalog is described in Section 3.3 of the paper.
+
 SCIENCE = Table(hdul['SCIENCE'].data)
 
 Catalogs with information related to the detection of the sources in MIDIS Deep.
 DETECTION = Table(hdul['DETECTION'].data)
+
 PHOTOMETRY = Table(hdul['PHOTOMETRY'].data)
+
 
 Catalog related to the selection of MIRI-red sources in the paper (Section 3.5).
 MONTECARLO = Table(hdul['MONTECARLO'].data)
